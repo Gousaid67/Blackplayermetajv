@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder new_str = new StringBuilder();
         for (MediaController i : mm_list)
         {
+            i.
             new_str.append(i.getPackageName() + "\n");
 
 
