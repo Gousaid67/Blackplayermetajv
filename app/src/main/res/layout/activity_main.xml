@@ -6,13 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/MediaControllerList"
-        android:layout_width="396dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="124dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:text="Refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Spinner
+        android:id="@+id/mediasessionlist"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dialog"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="423dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
